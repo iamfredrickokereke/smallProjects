@@ -1,4 +1,4 @@
-const http = require("http")
+//const http = require("http")
 const path = require("path")
 const express = require("express")
 const app = new express()
@@ -12,15 +12,15 @@ app.get('/', (request, response) => {
 })
 
 app.get('/about', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/'))
+    response.sendFile(path.resolve(__dirname, 'pages/about.html'))
 })
 
 app.get('/post', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/'))
+    response.sendFile(path.resolve(__dirname, 'pages/post.html'))
 })
 
-app.get('/contact', (request, response) =>{
-    response.sendFile(path.resolve(__dirname, 'pages/'))
+app.get('/contact', (request, response) => {
+    response.sendFile(path.resolve(__dirname, 'pages/contact.html'))
 })
 
 app.listen(4000, () => { console.log("App is listening on port: 4000")})
