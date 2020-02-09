@@ -2,10 +2,18 @@
 const path = require("path")
 const express = require("express")
 const app = new express()
+const expressEdge = require("express-edge")
 
 
 // set a public asset directory
 app.use(express.static("public"))
+
+//use express express edge for template engine
+app.use(expressEdge)
+
+//set views
+
+app.set('views', `${__dirname}/views`)
 
 
 app.get('/', (request, response) => {
