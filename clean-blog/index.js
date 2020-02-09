@@ -4,6 +4,7 @@ const express = require("express")
 const app = new express()
 
 
+// set a public asset directory
 app.use(express.static("public"))
 
 
