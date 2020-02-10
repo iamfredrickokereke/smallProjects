@@ -1,27 +1,39 @@
 //const http = require("http")
 const path = require("path")
+const expressEdge = require("express-edge")
+//const { config, engine } = require('express-edge')
 const express = require("express")
 const app = new express()
-const expressEdge = require("express-edge")
+
 
 
 // set a public asset directory
 app.use(express.static("public"))
 
-//use express express edge for template engine
-app.use(expressEdge)
 
-//set views
+// Configure Edge if need to
+//config({ cache: process.env.NODE_ENV === 'production' });
 
-app.set('views', `${__dirname}/views`)
+// Automatically sets view engine and adds dot notation to app.render
+app.use(expressEdge.engine);
+app.set('views', `${__dirname}/views`);
+
+// //use express express edge for template engine
+// app.use(expressEdge)
+
+// //set views
+
+// app.set('views', `${__dirname}/views`)
 
 
 app.get('/', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/index.html'))
+   // response.sendFile(path.resolve(__dirname, 'pages/index.html'))
+   response.render('index')
 })
 
 app.get('/about', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'pages/about.html'))
+    
 })
 
 app.get('/post', (request, response) => {
