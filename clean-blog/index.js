@@ -32,7 +32,9 @@ app.get('/', (request, response) => {
 })
 
 app.get('/about', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/about.html'))
+    //response.sendFile(path.resolve(__dirname, 'pages/about.html'))
+
+    response.render('about')
     
 })
 
