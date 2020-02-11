@@ -39,11 +39,14 @@ app.get('/about', (request, response) => {
 })
 
 app.get('/post', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/post.html'))
+    //response.sendFile(path.resolve(__dirname, 'pages/post.html'))
+
+    response.render('post')
 })
 
 app.get('/contact', (request, response) => {
-    response.sendFile(path.resolve(__dirname, 'pages/contact.html'))
+    //response.sendFile(path.resolve(__dirname, 'pages/contact.html'))
+    response.render('contact')
 })
 
 app.listen(4000, () => { console.log("App is listening on port: 4000")})
