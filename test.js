@@ -2,15 +2,15 @@ setTimeout(() => {
     console.log("Testing phase.")
 }, 7000);
 
-let time = 0
-setInterval(() => {
+let time = 2
+let timer = setInterval(() => {
 
     time+=2
 
-    if (time <=5)
-    {console.log( time + "seconds has passed")}
+    if (time <=10)
+    {console.log( time + " seconds has passed")}
     else{
 
-    clearInterval() }
+    clearInterval(timer) }
 }, 3000);
 
