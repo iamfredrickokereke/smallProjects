@@ -16,6 +16,8 @@ button.addEventListener('click', callChangeBackground);
 
 function callChangeBackground(){
 
+    let random = Math.floor(Math.random() * colors.length);
+
     body.style.backgroundColor = colors[1];
     console.log('changeBackground Fired!');    
 }
