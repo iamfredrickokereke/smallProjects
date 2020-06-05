@@ -15,7 +15,7 @@ button.addEventListener('click', callChangeBackground);
 
 
 function callChangeBackground(){
-    body.style.backgroundColor = 'blue';
-    console.log('change Background');
-    
+
+    body.style.backgroundColor = colors[1];
+    console.log('changeBackground Fired!');    
 }
