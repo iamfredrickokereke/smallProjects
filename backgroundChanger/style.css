@@ -8,5 +8,25 @@
 body{
     background-color: antiquewhite;
     min-height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+.colorBtn{
+    padding: 1.5rem;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    text-transform: capitalize;
+    outline: none;
+    font-size: 2rem;
+    border: 3px solid #fefefe;
+    border-radius: 8px;
+
+}
+
+.colorBtn:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
 }
