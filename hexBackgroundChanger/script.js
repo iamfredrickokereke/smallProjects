@@ -18,6 +18,23 @@ button.addEventListener('click', callbackAction);
 
 function callbackAction(e) {
     e.preventDefault();
+
+    let hexColor = '#';
+
+    for (let index = 0; index < 6; index++) {
+        
+        let random = Math.floor(Math.random()*hexNumbers.length);
+
+        hexColor+=hexNumbers[random];
+
+        console.log(hexColor);        
+    }
     console.log('Event Fired!!!');
+
+    body.style.backgroundColor = hexColor;
+
+    hexValue.innerHTML = hexColor;
+
+    
     
 }
