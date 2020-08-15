@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.colorBtn{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0.3rem;
+    outline: none;
+    border: 3px solid #fefefe;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #fefefe;
+}
+
+.colorBtn:hover{
+    background-color: rgba(0, 0, 0);
+}
