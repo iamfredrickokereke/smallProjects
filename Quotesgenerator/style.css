@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+
+    text-align: center;
+}
+
+.container h2{
+    padding: 20px;
+}
+
+.container .quoteBtn{
+    background-color: chocolate;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+blockquote{
+    border: 2px solid brown;
+    margin: 2px;
+    padding-left: 3px solid goldenrod;
+}
