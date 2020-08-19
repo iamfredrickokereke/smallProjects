@@ -10,12 +10,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
 .container{
 
     text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .container h2{
@@ -23,14 +27,16 @@ body{
 }
 
 .container .quoteBtn{
-    background-color: chocolate;
+    background-color: brown;
     border: 1px solid;
     border-radius: 7px;
     padding: 5px;
+    margin-top: 20px;
+    outline: none;
 }
 
 blockquote{
     border: 2px solid brown;
     margin: 2px;
-    padding-left: 3px solid goldenrod;
+    border-left: 13px solid brown;
 }
