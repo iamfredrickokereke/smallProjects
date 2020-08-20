@@ -6,16 +6,16 @@ const author = document.querySelector('.author');
 
 const quotesArray = [
     {
-        quote: 'Quote 1',
-        author: 'Author 1'
+        quote: 'First, solve the problem. Then, write the code.',
+        author: 'John Johnson'
     },
     {
-        quote: 'Quote 2',
-        author: 'Author 2'
+        quote: 'Experience is the name everyone gives to their mistakes.',
+        author: 'Oscar Wilde'
     },
     {
-        quote: 'Quote 3',
-        author: 'Author 3'
+        quote: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
+        author: 'Martin Fowler'
     }
 ]
 
@@ -30,7 +30,6 @@ function displayQuote(e) {
 
     console.log(random);
     
-
     quote.innerHTML = quotesArray[random].quote;
     author.innerHTML = quotesArray[random].author;
 

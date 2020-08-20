@@ -6,7 +6,7 @@
 
 body{
     min-height: 100vh;
-    background-color: blanchedalmond;
+    background-color: rgb(241, 189, 109);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,9 +17,9 @@ body{
 .container{
 
     text-align: center;
-    padding: 2rem;
     border-radius: 5px;
     background-color: #fff;
+    flex: 0 0 50%;
 }
 
 .container h2{
@@ -37,6 +37,7 @@ body{
 
 blockquote{
     border: 2px solid brown;
-    margin: 2px;
+    margin: 2rem;
+    padding: 1rem;
     border-left: 13px solid brown;
 }
