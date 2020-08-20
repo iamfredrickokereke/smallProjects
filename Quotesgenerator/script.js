@@ -7,15 +7,15 @@ const author = document.querySelector('.author');
 const quotesArray = [
     {
         quote: 'First, solve the problem. Then, write the code.',
-        author: 'John Johnson'
+        author: '~ John Johnson'
     },
     {
         quote: 'Experience is the name everyone gives to their mistakes.',
-        author: 'Oscar Wilde'
+        author: '~ Oscar Wilde'
     },
     {
         quote: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
-        author: 'Martin Fowler'
+        author: '~ Martin Fowler'
     }
 ]
 
