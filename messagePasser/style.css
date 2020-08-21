@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background-color: dodgerblue;
+    background-color: rgb(30, 144, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,20 +19,26 @@ body{
 .container{
     flex: 0 0 80%;
     padding: 2rem;
-    background-color: gainsboro;
+    background-color: rgb(220, 220, 220);
     text-align: center;
 }
 
 .sendBtn{
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     margin: 0.5rem;
     outline: none;
     background-color: rgb(85, 154, 211);
     border-radius: 7px;
-    cursor: pointer;
+    
+    border: none;
+    
 }
 
 .sendBtn:hover{
-    background-color: skyblue;
     
+    /* opacity: 0.8; */
+    /* transition: ease-in-out; */
+    color: rgb(220, 220, 220);
+    background-color: rgb(35, 150, 196);
+    cursor: pointer;
 }
