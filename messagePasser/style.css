@@ -11,6 +11,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+}
+
+.container{
+    flex: 0 0 80%;
+    padding: 2rem;
+    background-color: gainsboro;
+    text-align: center;
 }
 
 .sendBtn{
@@ -18,4 +28,11 @@ body{
     margin: 0.5rem;
     outline: none;
     background-color: rgb(85, 154, 211);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sendBtn:hover{
+    background-color: skyblue;
+    
 }

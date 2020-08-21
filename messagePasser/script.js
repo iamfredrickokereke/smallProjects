@@ -14,6 +14,11 @@ sendButton.addEventListener('click', display);
 function display(e) {
     e.preventDefault();
     let message = input.value;
-    console.log(message);
-    
+
+    if (message === '') {
+        alert('Please enter a value')
+    }else{        
+        output.innerHTML = message;
+        input.value = '';
+    }    
 }
