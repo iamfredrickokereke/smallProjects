@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendBtn{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    outline: none;
+    background-color: rgb(85, 154, 211);
+}
