@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    border: 0;
+
 
 }
 
@@ -27,7 +29,7 @@ body{
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     outline: none;
-    background-color: rgb(85, 154, 211);
+    background-color: rgb(30, 144, 255);
     border-radius: 7px;
     
     border: none;
@@ -41,4 +43,17 @@ body{
     color: rgb(220, 220, 220);
     background-color: rgb(35, 150, 196);
     cursor: pointer;
+}
+
+
+input[type=text]{
+    padding: 0.5rem;
+    margin: 1rem;
+    outline: none;
+    border: none;
+}
+
+input:focus{
+    color: rgb(30, 144, 255);
+    border-bottom: 0.00001px solid;
 }
